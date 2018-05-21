@@ -1,0 +1,52 @@
+.btn-keyword-container {
+    display: flex;
+}
+
+.imgs-grid {
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.imgs-grid div {
+    height: calc(12.5vw - 16.24px);
+} 
+
+/* editor */
+
+.headings {
+    display: block;
+}
+
+.editor {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: none;
+    margin: 0;
+}
+
+.canvas-container {
+    flex-grow: 1;
+}
+
+canvas {
+    max-width: 100%;
+    max-height: 70vh;
+}
+
+
+.editing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.edit-buttons * {
+    height: 45px;
+}
+
+.download {
+    align-self: flex-end;
+    padding-right: 40px;
+    background-origin: padding-box;
+    background-position-x: 89%;
+}
