@@ -96,14 +96,17 @@
 	src: url('../font/tungsten-thin.eot');
 	src: local('☺'), url('../font/tungsten-thin.woff') format('woff'), url('../font/tungsten-thin.ttf') format('truetype'), url('../font/tungsten-thin.svg') format('svg');
 	font-weight: normal;
-	font-style: normal;
+    font-style: normal;
+    text-transform: uppercase;
 }
 @font-face {
 	font-family: 'impact';
 	src: url('../font/impact.eot');
 	src: local('☺'), url('../font/impact.woff') format('woff'), url('../font/impact.ttf') format('truetype'), url('../font/impact.svg') format('svg');
 	font-weight: normal;
-	font-style: normal;
+    font-style: normal;
+    text-transform: uppercase;
+    font-variant-caps: all-small-caps;
 }
 * {
     box-sizing: border-box;

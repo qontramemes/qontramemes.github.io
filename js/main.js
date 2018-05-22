@@ -28,7 +28,7 @@ var gMeme = {
 
     txtTop: {
         align: 'center',
-        y: 210,
+        y: 475,
         isShadow: false,
         fontSize: 20,
         color: 'white',
@@ -36,7 +36,7 @@ var gMeme = {
     },
     txtBottom: {
         align: 'center',
-        y: 230,
+        y: 530,
         isShadow: false,
         fontSize: 20,
         color: 'white',
@@ -209,7 +209,8 @@ function drawTxts() {
                 gCanvas.ctx.shadowBlur = 1;
                 gCanvas.ctx.shadow
             } else gCanvas.ctx.shadowColor = 'transparent';
-            gCanvas.ctx.font = `${currTxt.fontSize}px impact`;
+            gCanvas.ctx.font = '55px impact';
+            gCanvas.ctx.textTransform = 'uppercase';
             gCanvas.ctx.strokeStyle = 'black';
             console.log('currTxt.color', currTxt.color);
             gCanvas.ctx.fillStyle = currTxt.color;
