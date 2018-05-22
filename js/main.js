@@ -14,6 +14,13 @@ var gImgs = [
     { id: 4, url: './img/ruggeri/ruggeri-5.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
     { id: 5, url: './img/ruggeri/ruggeri-6.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
     { id: 6, url: './img/ruggeri/ruggeri-7.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
+    { id: 7, url: './img/ruggeri/ruggeri-8.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
+    { id: 8, url: './img/ruggeri/ruggeri-9.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
+    { id: 9, url: './img/ruggeri/ruggeri-10.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
+    { id: 10, url: './img/ruggeri/ruggeri-11.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
+    { id: 11, url: './img/ruggeri/ruggeri-12.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
+    { id: 12, url: './img/ruggeri/ruggeri-13.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
+    { id: 13, url: './img/ruggeri/ruggeri-14.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
 ];
 
 var gMeme = {
