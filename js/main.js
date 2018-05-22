@@ -7,20 +7,20 @@
 var KEYWORDS = ['ruggeri'];
 
 var gImgs = [
-    { id: 0, url: './img/ruggeri/ruggeri-1.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 1, url: './img/ruggeri/ruggeri-2.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 2, url: './img/ruggeri/ruggeri-3.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 3, url: './img/ruggeri/ruggeri-4.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 4, url: './img/ruggeri/ruggeri-5.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 5, url: './img/ruggeri/ruggeri-6.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 6, url: './img/ruggeri/ruggeri-7.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 7, url: './img/ruggeri/ruggeri-8.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 8, url: './img/ruggeri/ruggeri-9.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 9, url: './img/ruggeri/ruggeri-10.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 10, url: './img/ruggeri/ruggeri-11.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 11, url: './img/ruggeri/ruggeri-12.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 12, url: './img/ruggeri/ruggeri-13.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
-    { id: 13, url: './img/ruggeri/ruggeri-14.jpg', keywords: ['ruggeri'], fontSize: 40, textTransform: 'uppercase' },
+    { id: 0, url: './img/ruggeri/ruggeri-1.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 1, url: './img/ruggeri/ruggeri-2.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 2, url: './img/ruggeri/ruggeri-3.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 3, url: './img/ruggeri/ruggeri-4.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 4, url: './img/ruggeri/ruggeri-5.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 5, url: './img/ruggeri/ruggeri-6.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 6, url: './img/ruggeri/ruggeri-7.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 7, url: './img/ruggeri/ruggeri-8.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 8, url: './img/ruggeri/ruggeri-9.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 9, url: './img/ruggeri/ruggeri-10.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 10, url: './img/ruggeri/ruggeri-11.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 11, url: './img/ruggeri/ruggeri-12.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 12, url: './img/ruggeri/ruggeri-13.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
+    { id: 13, url: './img/ruggeri/ruggeri-14.jpg', keywords: ['ruggeri'], fontSize: 55, textTransform: 'uppercase' },
 ];
 
 var gMeme = {
@@ -209,7 +209,7 @@ function drawTxts() {
                 gCanvas.ctx.shadowBlur = 1;
                 gCanvas.ctx.shadow
             } else gCanvas.ctx.shadowColor = 'transparent';
-            gCanvas.ctx.font = `${currTxt.fontSize}px tungsten-semibold`;
+            gCanvas.ctx.font = `${currTxt.fontSize}px impact`;
             gCanvas.ctx.strokeStyle = 'black';
             console.log('currTxt.color', currTxt.color);
             gCanvas.ctx.fillStyle = currTxt.color;
