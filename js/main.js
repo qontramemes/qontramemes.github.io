@@ -158,8 +158,8 @@ function renderCanvas(img) {
         var image = new Image();
         image.src = img.url;
         image.onload = function () {
-            gCanvas.canvas.height = this.naturalWidth / 1.7;
-            gCanvas.canvas.width = this.naturalWidth / 1.7;
+            gCanvas.canvas.height = this.naturalWidth;
+            gCanvas.canvas.width = this.naturalWidth;
             gCanvas.ctx.drawImage(this, 0,0, gCanvas.canvas.width, gCanvas.canvas.height);            
         }
     }

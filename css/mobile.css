@@ -11,6 +11,9 @@ body {
     background-position: center center;
     padding-bottom: 50px;
 }
+.canvas-container {
+    transform: scale(0.5,0.5);
+}
 footer p {
     background: #dcddde;
     color: #241f20;
