@@ -1,0 +1,16 @@
+.imgs-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.imgs-grid div {
+    height: calc(25vw - 22.5px);
+}
+
+.canvas-container {
+    transform: scale(1,1);
+}
+
+/* .img-canvas {
+    width: 100vw;
+    height: auto;
+} */
