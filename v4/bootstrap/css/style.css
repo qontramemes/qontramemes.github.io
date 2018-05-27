@@ -1,0 +1,4 @@
+@import 'global.css';
+@import 'mobile.css' (max-width: 768px);
+@import 'tablet.css' (min-width: 880px);
+@import 'desktop.css' (min-width: 1200px);
