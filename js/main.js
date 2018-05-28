@@ -6,6 +6,10 @@ function openEditor(imgId) {
         return imgId === img.id;
     });
     */
+   var ruggeriTest = "ruggeri"+imgId;
+
+   console.meme('','',ruggeriTest);
+
     document.querySelector('.back-to-imgs').style.display = 'initial';
     document.querySelector('.img-gallery').style.display = 'none';
     document.querySelector('.headings').style.display = 'none';

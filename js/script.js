@@ -75,5 +75,5 @@ angular.module('Meme',[])
 
 })
 .run(function() {
-	console.meme('','','ruggeri1');
+	
 });
