@@ -1,20 +1,20 @@
 angular.module('Meme',[])
 .controller('MainController',function($scope) {
 	$scope.ruggeris = [
-		{ id: 0, url: './img/ruggeri/ruggeri-1.jpg'},
-		{ id: 1, url: './img/ruggeri/ruggeri-2.jpg'},
-		{ id: 2, url: './img/ruggeri/ruggeri-3.jpg'},
-		{ id: 3, url: './img/ruggeri/ruggeri-4.jpg'},
-		{ id: 4, url: './img/ruggeri/ruggeri-5.jpg'},
-		{ id: 5, url: './img/ruggeri/ruggeri-6.jpg'},
-		{ id: 6, url: './img/ruggeri/ruggeri-7.jpg'},
-		{ id: 7, url: './img/ruggeri/ruggeri-8.jpg'},
-		{ id: 8, url: './img/ruggeri/ruggeri-9.jpg'},
-		{ id: 9, url: './img/ruggeri/ruggeri-10.jpg'},
-		{ id: 10, url: './img/ruggeri/ruggeri-11.jpg'},
-		{ id: 11, url: './img/ruggeri/ruggeri-12.jpg'},
-		{ id: 12, url: './img/ruggeri/ruggeri-13.jpg'},
-		{ id: 13, url: './img/ruggeri/ruggeri-14.jpg'},		
+		{ id: 1, url: './img/ruggeri/ruggeri-1.jpg'},
+		{ id: 2, url: './img/ruggeri/ruggeri-2.jpg'},
+		{ id: 3, url: './img/ruggeri/ruggeri-3.jpg'},
+		{ id: 4, url: './img/ruggeri/ruggeri-4.jpg'},
+		{ id: 5, url: './img/ruggeri/ruggeri-5.jpg'},
+		{ id: 6, url: './img/ruggeri/ruggeri-6.jpg'},
+		{ id: 7, url: './img/ruggeri/ruggeri-7.jpg'},
+		{ id: 8, url: './img/ruggeri/ruggeri-8.jpg'},
+		{ id: 9, url: './img/ruggeri/ruggeri-9.jpg'},
+		{ id: 10, url: './img/ruggeri/ruggeri-10.jpg'},
+		{ id: 11, url: './img/ruggeri/ruggeri-11.jpg'},
+		{ id: 12, url: './img/ruggeri/ruggeri-12.jpg'},
+		{ id: 13, url: './img/ruggeri/ruggeri-13.jpg'},
+		{ id: 14, url: './img/ruggeri/ruggeri-14.jpg'},		
 	  ];
 	/*
 	var ruggeriMeme;
@@ -27,7 +27,7 @@ angular.module('Meme',[])
 
 	$scope.toptext = '';
 	$scope.bottomtext = '';
-	$scope.selectedMeme = 'ruggeri1';
+	// $scope.selectedMeme = ruggeriSeleccion;
 	$scope.memes = [];
 
 	for(var key in console.list) {
@@ -58,6 +58,20 @@ angular.module('Meme',[])
 		link.href = uri;
 		link.click();
 	};
+
+	/*
+	var memeRuggeri;
+	function twoFunctions(memeElegido) {
+		openEditor();
+		function ruggeriSeleccion() {
+			memeRuggeri = "ruggeri-"+memeElegido;
+			console.log("memeRuggeri: "+memeRuggeri);
+			return memeRuggeri;
+		}
+	
+		console.meme('','',ruggeriSeleccion());
+	}
+	*/	
 
 })
 .run(function() {

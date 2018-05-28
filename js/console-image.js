@@ -1,9 +1,12 @@
 (function(console) {
 	"use strict";
 
-	var memes = {"ruggeri1":"./img/ruggeri/ruggeri-1.jpg"};
+	var memes = {"ruggeri1":"./img/ruggeri/ruggeri-1.jpg", "ruggeri2":"./img/ruggeri/ruggeri-2.jpg", "ruggeri3":"./img/ruggeri/ruggeri-3.jpg", "ruggeri4":"./img/ruggeri/ruggeri-4.jpg", "ruggeri5":"./img/ruggeri/ruggeri-5.jpg", "ruggeri6":"./img/ruggeri/ruggeri-6.jpg", "ruggeri7":"./img/ruggeri/ruggeri-7.jpg", "ruggeri8":"./img/ruggeri/ruggeri-8.jpg", "ruggeri9":"./img/ruggeri/ruggeri-9.jpg", "ruggeri10":"./img/ruggeri/ruggeri-10.jpg", "ruggeri11":"./img/ruggeri/ruggeri-11.jpg", "ruggeri12":"./img/ruggeri/ruggeri-12.jpg", "ruggeri13":"./img/ruggeri/ruggeri-13.jpg", "ruggeri14":"./img/ruggeri/ruggeri-14.jpg"};
+
 	var canvas = document.createElement("canvas");
+
 	console.list = memes;
+	console.log("console.list: "+console.list);
 
 	function drawMemeText(ctx, type, text, width, y) {
 		text = text.toUpperCase();
