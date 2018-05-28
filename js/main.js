@@ -19,18 +19,19 @@ function openEditor(imgId) {
     document.querySelector('footer').style.position = 'relative';
     document.querySelector('body').style.padding = '0px 0px 0px';
 
-    var up = document.getElementById('upload'),
-    canvas = document.getElementById('canvas'),
-    uploaded = document.getElementById('meme')  ;
+    var up = document.getElementById('upload');
+    var uploaded = document.getElementById('meme');
 
     up.addEventListener('click', uploadToImgur);
 
     function uploadToImgur() {
+        var canvas = document.getElementById('canvas');
+
         document.querySelector('#email').style.display = 'block';
         document.querySelector('#toptext').style.display = 'none';
         document.querySelector('#bottomtext').style.display = 'none';
-        $('#upload').html("ENVIAR CONTRAMEME");
         var img;
+        console.log("canvas: "+canvas);
         try {
             img = canvas.toDataURL('image/gif', 1.0).split(',')[1];
         } catch(e) {
@@ -53,6 +54,7 @@ function openEditor(imgId) {
         }).success(function(data) {
             var l = data.data.link;
             uploaded.value = l;
+            $('#upload').html("ENVIAR CONTRAMEME");
             console.log("uploaded.value: "+uploaded.value);
         }).error(function(err) {
             console.error(err);
