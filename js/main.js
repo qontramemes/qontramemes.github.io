@@ -22,6 +22,10 @@ function openEditor(imgId) {
     up.addEventListener('click', uploadToImgur);
 
     function uploadToImgur() {
+        document.querySelector('#email').style.display = 'block';
+        document.querySelector('#toptext').style.display = 'none';
+        document.querySelector('#bottomtext').style.display = 'none';
+        $('#upload').html("ENVIAR CONTRAMEME");
         var img;
         try {
             img = canvas.toDataURL('image/gif', 1.0).split(',')[1];
@@ -45,6 +49,7 @@ function openEditor(imgId) {
         }).success(function(data) {
             var l = data.data.link;
             uploaded.value = l;
+            console.log("uploaded.value: "+uploaded.value);
         }).error(function(err) {
             console.error(err);
         });

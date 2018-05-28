@@ -66,21 +66,19 @@
                 <div class="container-fluid">
                     <div class="info span4">
                         <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net" action="https://script.google.com/a/netfilmx.com/macros/s/AKfycbxKD5kl8hLylzqiVyfK4_MCWE0U9fgPnT_T3FpehA/exec">
-                            <fieldset>
-                                <input id="email" name="email" type="email" value="" required placeholder="INGRESÁ TU MAIL" class="input-heading"/>
-                                <span id="email-invalid" style="display:none!important">Must be a valid email address</span>
-                            </fieldset>
                             <div class="canvas"></div>                            
                             <fieldset>
                                 <input id="meme" name="meme" placeholder="meme" value="" class="input-heading" style="display:none;"/>
                             </fieldset>    
                             <fieldset>
-                                <input width="75px" type="text" id="toptext" name="toptext" ng-model='toptext' ng-change="alterMeme()" placeholder="top text" class="input-heading first-input"/>
-                                <input type="text" id="bottomtext" name="bottomtext" ng-model='bottomtext' ng-change="alterMeme()" placeholder="bottom text" class="input-heading"/>
+                                <input width="75px" type="text" id="toptext" name="toptext" ng-model='toptext' ng-change="alterMeme()" placeholder="texto arriba" class="input-heading first-input"/>
+                                <input type="text" id="bottomtext" name="bottomtext" ng-model='bottomtext' ng-change="alterMeme()" placeholder="texto abajo" class="input-heading"/>
                                 <select ng-model="selectedMeme" ng-init="selectedMeme = memes[0]" ng-change="alterMeme()" ng-options="m.name for m in memes" style="display: none;">
                                 </select>
+                                <input id="email" name="email" type="email" value="" required placeholder="INGRESÁ TU MAIL" class="input-heading"/>
+                                <span id="email-invalid" style="display:none!important">Must be a valid email address</span>                                
                                 <button id="upload" class="button-success btn btn-large btn-primary download" ng-click="create()">CREAR CONTRAMEME</button>
-                                <div id="uploaded" style="color: gray; display: block;">Link will appear here</div>
+                                <div id="uploaded" style="color: gray; display: none;">Link will appear here</div>
                             </fieldset>                            
                         </form>
                         <div style="display:none;" id="thankyou_message">
@@ -104,8 +102,8 @@
     <footer>
         <p>SIN OBLIGACIÓN DE COMPRA, VIGENTE DEL 07/05/2018 AL 03/06/2018 EN LA REPÚBLICA ARGENTINA, EXCEPTO TIERRA DEL FUEGO, ANTARTIDA E ISLAS DEL ATLÁNTICO SUR. BEBER CON MODERACIÓN.<br>PROHIBIDA SU VENTA A MENORES DE 18 AÑOS.</p>
     </footer>
-    <script src='js/main.js'></script>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>  
+    <script src='js/main.js'></script>
     <script src='js/ageval.js'></script> 
     <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script> 
 </body>

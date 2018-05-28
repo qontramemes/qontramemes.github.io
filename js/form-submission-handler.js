@@ -82,8 +82,8 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     var url = event.target.action;  //
     var xhr = new XMLHttpRequest();
     xhr.open('POST', url);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");  
     // xhr.withCredentials = true;
-    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function() {
         console.log( xhr.status, xhr.statusText )
         console.log(xhr.responseText);
@@ -106,6 +106,6 @@ function loaded() {
   console.log("Contact form submission handler loaded successfully.");
   // bind to the submit event of our form
   var form = document.getElementById("gform");
-  form.addEventListener("submit", handleFormSubmit, false);
+  form.addEventListener("submit", handleFormSubmit, false);  
 };
 document.addEventListener("DOMContentLoaded", loaded, false);

@@ -1,7 +1,7 @@
 (function(console) {
 	"use strict";
 
-	var memes = {"ruggeri1":"https://i.imgur.com/s6FZVqC.jpg"}; // var memes = {"ruggeri-1":"./img/ruggeri-1.gif"};
+	var memes = {"ruggeri1":"./img/ruggeri-1.gif"};
 	var canvas = document.createElement("canvas");
 	console.list = memes;
 

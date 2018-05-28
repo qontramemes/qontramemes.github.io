@@ -252,6 +252,7 @@ main {
 }
 .canvas canvas {
     max-width: 100%;
+    margin-bottom: 16px;
 }
 #img-canvas {
     /*
@@ -489,4 +490,9 @@ footer p {
     background: rgba(0, 0, 0, 0.55);
     z-index: -1;
     display: none;
+}
+#email {
+    display: none;
+    margin: 0 auto 16px;
+    border-radius: 20px 0 0 0;
 }
