@@ -16,27 +16,23 @@ angular.module('Meme',[])
 		{ id: 13, url: './img/ruggeri/ruggeri-13.jpg'},
 		{ id: 14, url: './img/ruggeri/ruggeri-14.jpg'},		
 	  ];
-	/*
-	var ruggeriMeme;
-
-	function selectedRuggeri(ruggeriId) {
-		ruggeriMeme = ruggeriId;
-		console.meme('','',ruggeriMeme) ;
-	}
-	*/
 
 	$scope.toptext = '';
 	$scope.bottomtext = '';
-	// $scope.selectedMeme = ruggeriSeleccion;
+	$scope.selectedMeme = function(ruggeriid) {
+		var ruru = 'ruggeri'+ruggeriid;
+		console.log(ruru);
+		// return 'ruggeri'+ruru;
+		$scope.alterMeme = function(){
+			var url = ruru;
+			console.meme($scope.toptext,$scope.bottomtext,url);
+			console.log("url: "+url);
+		}		
+	};
 	$scope.memes = [];
 
 	for(var key in console.list) {
 		$scope.memes.push({name:key,url:console.list[key]});
-	}
-	
-	$scope.alterMeme = function(){
-		var url = $scope.memes[$scope.memes.indexOf($scope.selectedMeme)].name;
-		console.meme($scope.toptext,$scope.bottomtext,url);
 	}
 
 	$scope.create = function() {

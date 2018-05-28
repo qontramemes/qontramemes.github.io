@@ -58,9 +58,9 @@
         </section>
         <section class="img-gallery container">
             <div class="imgs-grid">
-                <div ng-repeat="ruggeri in ruggeris" data-id="{{ ruggeri.id }}" style="background-image: url(./{{ ruggeri.url }})" onclick="openEditor({{ ruggeri.id }})"></div>
+                <div ng-repeat="ruggeri in ruggeris" data-id="{{ ruggeri.id }}" style="background-image: url(./{{ ruggeri.url }})" onclick="openEditor({{ ruggeri.id }})" ng-click="selectedMeme(ruggeri.id)"></div>
             </div>
-        </section>
+        </section>        
         <section class="editor container">
             <div>
                 <div class="container-fluid">
@@ -73,8 +73,6 @@
                             <fieldset>
                                 <input width="75px" type="text" id="toptext" name="toptext" ng-model='toptext' ng-change="alterMeme()" placeholder="texto arriba" class="input-heading first-input"/>
                                 <input type="text" id="bottomtext" name="bottomtext" ng-model='bottomtext' ng-change="alterMeme()" placeholder="texto abajo" class="input-heading"/>
-                                <select ng-model="selectedMeme" ng-init="selectedMeme = memes[0]" ng-change="alterMeme()" ng-options="m.name for m in memes" style="display: none;">
-                                </select>
                                 <input id="email" name="email" type="email" value="" required placeholder="INGRESÁ TU MAIL" class="input-heading"/>
                                 <span id="email-invalid" style="display:none!important">Must be a valid email address</span>                                
                                 <button id="upload" class="button-success btn btn-large btn-primary download" ng-click="create()">CREAR CONTRAMEME</button>
@@ -93,8 +91,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-        
+        </section>        
     </main>
     <div id="down-arrow">
         <img src="img/down-arrow.png" alt="">
