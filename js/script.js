@@ -21,12 +21,10 @@ angular.module('Meme',[])
 	$scope.bottomtext = '';
 	$scope.selectedMeme = function(ruggeriid) {
 		var ruru = 'ruggeri'+ruggeriid;
-		console.log(ruru);
 		// return 'ruggeri'+ruru;
 		$scope.alterMeme = function(){
 			var url = ruru;
 			console.meme($scope.toptext,$scope.bottomtext,url);
-			console.log("url: "+url);
 		}		
 	};
 	$scope.memes = [];
@@ -53,21 +51,7 @@ angular.module('Meme',[])
 		link.download = name;
 		link.href = uri;
 		link.click();
-	};
-
-	/*
-	var memeRuggeri;
-	function twoFunctions(memeElegido) {
-		openEditor();
-		function ruggeriSeleccion() {
-			memeRuggeri = "ruggeri-"+memeElegido;
-			console.log("memeRuggeri: "+memeRuggeri);
-			return memeRuggeri;
-		}
-	
-		console.meme('','',ruggeriSeleccion());
-	}
-	*/	
+	};	
 
 })
 .run(function() {

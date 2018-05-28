@@ -6,7 +6,6 @@
 	var canvas = document.createElement("canvas");
 	
 	console.list = memes;
-	console.log("console.list: "+console.list);
 
 	function drawMemeText(ctx, type, text, width, y) {
 		text = text.toUpperCase();
@@ -91,7 +90,7 @@
 
 		if(memes[image]) var url = memes[image];
 		else var url = image;
-		console.log("url"+url);
+
 		img.src = url;
 	};
 })(console);

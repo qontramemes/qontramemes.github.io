@@ -31,7 +31,6 @@ function openEditor(imgId) {
         document.querySelector('#toptext').style.display = 'none';
         document.querySelector('#bottomtext').style.display = 'none';
         var img;
-        console.log("canvas: "+canvas);
         try {
             img = canvas.toDataURL('image/gif', 1.0).split(',')[1];
         } catch(e) {
@@ -55,7 +54,6 @@ function openEditor(imgId) {
             var l = data.data.link;
             uploaded.value = l;
             $('#upload').html("ENVIAR CONTRAMEME");
-            console.log("uploaded.value: "+uploaded.value);
         }).error(function(err) {
             console.error(err);
         });
