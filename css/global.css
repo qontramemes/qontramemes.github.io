@@ -61,23 +61,6 @@
     text-transform: uppercase!important;
 }
 @font-face {
-	font-family: 'tungsten-semibold';
-	src: url('../font/tungsten-semibold.eot');
-	src: url('../font/tungsten-semibold.eot?#iefix') format('embedded-opentype'),
-		url('../font/tungsten-semibold.woff') format('woff'),
-        url('../font/tungsten-semibold.ttf') format('truetype'),
-        url('../font/tungsten-semibold.svg') format('svg');
-	font-weight: 600;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'tungsten-medium';
-	src: url('../font/tungsten-medium.eot');
-	src: local('☺'), url('../font/tungsten-medium.woff') format('woff'), url('../font/tungsten-medium.ttf') format('truetype'), url('../font/tungsten-medium.svg') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
 	font-family: 'quilmes-logo';
 	src: url('../font/quilmes-logo.eot');
 	src: local('☺'), url('../font/quilmes-logo.woff') format('woff'), url('../font/quilmes-logo.ttf') format('truetype'), url('../font/quilmes-logo.svg') format('svg');
@@ -98,6 +81,30 @@
 	font-weight: normal;
     font-style: normal;
     text-transform: uppercase;
+}
+@font-face {
+	font-family: 'tungsten-medium';
+	src: url('../font/tungsten-medium.eot');
+	src: local('☺'), url('../font/tungsten-medium.woff') format('woff'), url('../font/tungsten-medium.ttf') format('truetype'), url('../font/tungsten-medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'tungsten-semibold';
+	src: url('../font/tungsten-semibold.eot');
+	src: url('../font/tungsten-semibold.eot?#iefix') format('embedded-opentype'),
+		url('../font/tungsten-semibold.woff') format('woff'),
+        url('../font/tungsten-semibold.ttf') format('truetype'),
+        url('../font/tungsten-semibold.svg') format('svg');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'tungsten-bold';
+	src: url('../font/tungsten-bold.eot');
+	src: local('☺'), url('../font/tungsten-bold.woff') format('woff'), url('../font/tungsten-bold.ttf') format('truetype'), url('../font/tungsten-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 @font-face {
 	font-family: 'impact';
@@ -243,6 +250,9 @@ main {
     max-width: 300px;  
     margin: 0 auto; 
 }
+.canvas canvas {
+    max-width: 100%;
+}
 #img-canvas {
     /*
     width: 100%;
@@ -268,11 +278,13 @@ main {
     padding: 10px;
     height: 60px;
     width: 100%;
+    max-width: 320px;
     background: #4d4d4f;
+    margin: 0 auto;
     margin-bottom: 30px;
     border-radius: 0 0 20px 20px;
     font-family: 'tungsten-thin';
-    color: #aaaaab;
+    color: #ffffff;
     font-size: 30px;
 }
 .back-to-imgs:hover {
@@ -327,19 +339,29 @@ main {
 .edit-buttons .enlarge-font {
     background-image: url('../img/enlarge-font.png');
 }
+fieldset {
+    padding: 0px;
+    border: 0px;
+    text-align: center;
+}
 .input-heading {
     grid-column: span 7;
     grid-row: span 1;
     border-radius: 2px;
-    border: 1px solid gray;
+    border: 0px solid transparent;
     height: 40px;
     text-align: center;
     font-family: 'tungsten-thin';
-    font-size: 20px;
+    font-size: 27px;
     text-transform: uppercase;    
+    width: 100%!important;
+    height: 55px;
+    margin-bottom: 16px;
+    max-width: 320px;
 }
 .first-input {
     border-radius: 20px 0 0 0;
+    margin-top: 16px;
 }
 .download, .add-heading {
     display: block;
@@ -363,12 +385,15 @@ main {
     display: none!important;
 }
 .download {
-    margin-top: 10px;
     background-color: #00b9f2;
     border-radius: 0 0 20px 0px;
     font-family: 'tungsten-medium';
     font-size: 30px;
     letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
 }
 #down-arrow {
     width: 50px!important;
@@ -415,4 +440,53 @@ footer p {
 #ageval > button, html input[type=button], input[type=reset], input[type=submit] {
     -webkit-appearance: button;
     cursor: pointer;
+}
+
+#email-invalid {
+    display: none!important;
+}
+
+#thankyou_message {
+    height: 335px;
+    width: 335px;
+    background: #00B9F2;
+}
+.thanks-messages {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.thanks-message-one, .thanks-message-two {
+    color: #ffffff;
+}
+.thanks-message-one {
+    font-family: 'tungsten-bold';
+    font-size: 58px;
+    line-height: 52px;
+    text-align: center;   
+    margin: 0; 
+}
+.thanks-message-two {
+    font-family: 'publico-italic';
+    font-size: 22px;
+    text-align: center; 
+    margin: 0;   
+}
+.thanks-close {
+    transform: translate(-10px,10px);
+    float: right;
+    padding: 10px;
+    display: block;
+}
+.thanks-close:hover {
+    cursor: pointer;
+}
+#overlay-exit {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: -1;
+    display: none;
 }

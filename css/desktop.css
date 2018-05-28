@@ -25,6 +25,10 @@ body {
     display: block;
 }
 
+.headings h2 br {
+    display: none;
+}
+
 .editor {
     flex-direction: row;
     justify-content: space-around;
@@ -56,7 +60,6 @@ canvas {
 
 .download {
     align-self: flex-end;
-    padding-right: 40px;
     background-origin: padding-box;
     background-position-x: 89%;
 }
