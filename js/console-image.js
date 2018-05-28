@@ -1,12 +1,6 @@
-/**
- * Dubiously created by Adrian Cooney
- * http://dunxrion.github.io
- */
-
 (function(console) {
 	"use strict";
 
-	//Bootlegged of imgur.com/memegen
 	var memes = {"ruggeri1":"https://i.imgur.com/s6FZVqC.jpg"}; // var memes = {"ruggeri-1":"./img/ruggeri-1.gif"};
 	var canvas = document.createElement("canvas");
 	console.list = memes;
@@ -95,6 +89,6 @@
 		if(memes[image]) var url = memes[image];
 		else var url = image;
 
-		img.src = url; //"http://www.corsproxy.com/" + url.replace(/https?:\/\//, "");
+		img.src = url;
 	};
 })(console);

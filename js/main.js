@@ -15,7 +15,6 @@ function openEditor(imgId) {
     document.querySelector('footer').style.position = 'relative';
     document.querySelector('body').style.padding = '0px 0px 0px';
 
-    // #ToDo: clean this!
     var up = document.getElementById('upload'),
     canvas = document.getElementById('canvas'),
     uploaded = document.getElementById('meme')  ;

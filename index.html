@@ -80,7 +80,7 @@
                                 <select ng-model="selectedMeme" ng-init="selectedMeme = memes[0]" ng-change="alterMeme()" ng-options="m.name for m in memes" style="display: none;">
                                 </select>
                                 <button id="upload" class="button-success btn btn-large btn-primary download" ng-click="create()">CREAR CONTRAMEME</button>
-                                <div id="uploaded" style="color: gray; display: none;">Link will appear here</div>
+                                <div id="uploaded" style="color: gray; display: block;">Link will appear here</div>
                             </fieldset>                            
                         </form>
                         <div style="display:none;" id="thankyou_message">

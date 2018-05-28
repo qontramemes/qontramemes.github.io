@@ -41,7 +41,7 @@ angular.module('Meme',[])
 
 	$scope.create = function() {
 		var uri = document.getElementById('canvas').toDataURL();
-		downloadImage(uri,generateName());
+		// downloadImage(uri,generateName());
 	}
 
 	function generateName() {
