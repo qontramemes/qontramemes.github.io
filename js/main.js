@@ -63,6 +63,7 @@ function openEditor(imgId) {
 }
 
 function closeEditor() {
+    console.meme('','','ruggeri1');
     document.querySelector('#overlay-exit').style.display = 'none';
     document.querySelector('.back-to-imgs').style.display = 'none';    
     document.querySelector('.img-gallery').style.display = 'block';
@@ -72,4 +73,8 @@ function closeEditor() {
     document.querySelector('.editor').style.display = 'none';
     document.querySelector('footer').style.position = 'fixed';
     document.querySelector('body').style.padding = '0px 0px 45px';
+}
+
+function reloadEditor() {
+    location.reload(); 
 }

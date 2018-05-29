@@ -90,8 +90,10 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
         document.getElementById("gform").style.display = "none"; // hide form
         document.getElementById("overlay-exit").style.display = "block"; // show overlay-exit
         var thankYouMessage = document.getElementById("thankyou_message");
+        var volver = document.getElementById("back-to-imgs");
         if (thankYouMessage) {
           thankYouMessage.style.display = "block";
+          volver.style.display = "none";
         }
         return;
     };

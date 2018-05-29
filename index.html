@@ -13,6 +13,16 @@
     <meta property="og:image" content="image/examples" />		
     <meta property="og:description" content="Quilmes | CONTRAMEMES" />   
     <script src="js/jquery-1.9.1.min.js"></script>
+    <script>
+        function localStore() {
+            if (localStorage.getItem('wasVisited') !== undefined) {
+                $("#ageval").hide();
+            } else {
+                localStorage.setItem('wasVisited', 1);
+                $("#ageval").show();
+            }
+        }
+    </script>    
     <script src="js/console-image.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/script.js"></script>     
@@ -28,14 +38,14 @@
         <!-- keep empty -->
     </div>    
     <header>
-        <button class="clean-btn back-to-imgs" onclick="closeEditor()">
+        <button id="back-to-imgs" class="clean-btn back-to-imgs" onclick="closeEditor()">
             VOLVER
         </button>
         <h2 class="logo">
             <img src="img/quilmes/logo.png" alt="">
         </h2>
     </header>
-    <div id="ageval" style="display: block;">
+    <div id="ageval">
         <div class="wrap">
             <h1>Q</h1>
             <h3>Ingresa tu fecha de nacimiento</h3>
@@ -87,7 +97,7 @@
                             </fieldset>                            
                         </form>
                         <div style="display:none;" id="thankyou_message">
-                            <div class="thanks-close" onclick="closeEditor()">
+                            <div class="thanks-close" onclick="reloadEditor()">
                                 <img src="img/close.png" alt="">
                             </div>
                             <div class="thanks-messages">
