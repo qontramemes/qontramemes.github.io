@@ -51,7 +51,7 @@ footer p {
     font-size: 11px;
     text-align: center;
     margin: 0px;
-    padding: 10px 25px;
+    padding: 10px;
 }
 @media screen and (max-width: 768px) and (orientation: portrait), screen and (max-width: 420px) and (max-height: 420px) {
     #ageval .wrap h1 {font-size:100px;line-height:40px;}
