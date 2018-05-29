@@ -79,7 +79,7 @@
 			//Draw the background
 			ctx.drawImage(this, 0, 0, _w, _h);
 
-			drawMemeText(ctx, "upper", upper, _w, 50); //upper
+			drawMemeText(ctx, "upper", upper, _w, 300); //upper
 			drawMemeText(ctx, "lower", lower, _w, _h - 50); //upper
 
 			//my lil' hack
