@@ -1,9 +1,14 @@
-body {
-    background-image: url('../img/bg/bg.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+.about-contramemes {
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'tungsten-light';
+    font-size: 50px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;    
 }
+
 .background-mobile {
     display: none;
 }
@@ -12,12 +17,18 @@ body {
 }
 
 .imgs-grid {
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;    
 }
 
 .imgs-grid div {
-    height: calc(12.5vw - 16.24px);
+    height: 300px;
 } 
+.cabezon-contramemes img {
+    max-width: 100%;
+    height: 300px;
+}
 
 /* editor */
 

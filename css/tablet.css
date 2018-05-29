@@ -1,3 +1,21 @@
+.about-contramemes {
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'tungsten-light';
+    font-size: 26px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1400px;
+}
+.background-mobile {
+    display: none;
+}
+.background-mobile {
+    display: none;
+}
 .imgs-grid {
     grid-template-columns: repeat(4, 1fr);
 }
