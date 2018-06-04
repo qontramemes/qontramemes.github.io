@@ -12,17 +12,7 @@
     <meta property="og:url" content="http://example.com" />
     <meta property="og:image" content="image/examples" />		
     <meta property="og:description" content="Quilmes | CONTRAMEMES" />   
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script>
-        function localStore() {
-            if (localStorage.getItem('wasVisited') !== undefined) {
-                $("#ageval").hide();
-            } else {
-                localStorage.setItem('wasVisited', 1);
-                $("#ageval").show();
-            }
-        }
-    </script>    
+    <script src="js/jquery-1.9.1.min.js"></script>   
     <script src="js/console-image.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/script.js"></script>     
@@ -45,23 +35,6 @@
             <img src="img/quilmes/logo.png" alt="">
         </h2>
     </header>
-    <div id="ageval">
-        <div class="wrap">
-            <h1>Q</h1>
-            <h3>Ingresa tu fecha de nacimiento</h3>
-            <form id="ageval_form" action="" method="post">
-                <p>
-                    <input type="text" name="day" id="day" maxlength="2" value="" placeholder="DD"> 
-                    <input type="text" name="month" id="month" maxlength="2" value="" placeholder="MM"> 
-                    <input type="text" name="year" id="year" maxlength="4" value="" placeholder="AAAA">
-                </p>
-                <p class="submit">
-                    <input type="submit" value="Ingresar">
-                </p>
-                <div class="response"></div>
-            </form>
-        </div>
-    </div>    
     <main ng-controller="MainController">
         <section class="headings">
             <h1><img src="img/quilmes/contramemes.png" alt=""></h1>
@@ -118,7 +91,6 @@
     </footer>
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>  
     <script src='js/main.js'></script>
-    <script src='js/ageval.js'></script> 
     <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script> 
 </body>
 </html>
