@@ -1,15 +1,38 @@
 body {
     padding-bottom: 0px;
 }
+header .logo {
+    margin: 30px 10px 10px;
+    line-height: 100%;
+    width: auto;
+    font-weight: 300;
+    color: #47525E;
+}
+header .logo img {
+    height: 55px;
+}
 .about-contramemes {
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
     font-family: 'tungsten-light';
-    font-size: 26px;
+    font-size: 20px;
     max-width: 100%;
     margin: 0 auto;
-    margin-bottom: 20px;  
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+.headings h2 {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'publico-italic';
+    text-align: center;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 50px 10px;
 }
 .background-mobile {
     width: 100%;
