@@ -437,7 +437,7 @@ fieldset {
 #down-arrow {
     width: 50px!important;
     position: fixed;
-    bottom: 80px;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-25px);    
 }
@@ -445,7 +445,7 @@ fieldset {
     width: 100%;
 }
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0px;
     width: 100%;    
 }

@@ -38,7 +38,7 @@
     <main ng-controller="MainController">
         <section class="headings">
             <h1><img src="img/quilmes/contramemes.png" alt=""></h1>
-            <p class="about-contramemes">¿Qué son los CONTRAMEMES? una idea de Quilmes y Ruggeri que no saca la patita cuando tiene que defender a la Selección contra los memes agresivos e injustos.</p>
+            <p class="about-contramemes">¿Qué son los CONTRAMEMES? Una idea para responder con humor a los memes negativos contra nuestra Selección.</p>
             <h2>
                 1. Elegí tu meme de Ruggeri. <br> 2. Creá tu frase de aliento. <br> 3. Descargalo y compartilo.
             </h2>
@@ -87,10 +87,20 @@
         <img src="img/down-arrow.png" alt="">
     </div>
     <footer>
-        <p>SIN OBLIGACIÓN DE COMPRA, VIGENTE DEL 07/05/2018 AL 03/06/2018 EN LA REPÚBLICA ARGENTINA, EXCEPTO TIERRA DEL FUEGO, ANTARTIDA E ISLAS DEL ATLÁNTICO SUR. BEBER CON MODERACIÓN. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS.</p>
+        <p>BEBER CON MODERACIÓN. PROHIBIDA SU VENTA A MENORES DE 18 AÑOS</p>
     </footer>
     <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>  
     <script src='js/main.js'></script>
-    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script> 
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+    <script>
+        document.onscroll = function() {
+            if (window.innerHeight + window.scrollY < document.body.clientHeight) {
+                $('#down-arrow').css('display','block');
+            }
+            else {
+                $('#down-arrow').css('display','none');
+            }
+        }
+    </script> 
 </body>
 </html>
